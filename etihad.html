@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etihad Cafe-zakia</title>
+  <link rel="stylesheet" href="styles.css">
+
+<!-- linking email using Emailjs -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "a4HsNnzmVr4PJiYJt",
+      });
+   })();
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home"><span class="brand-mark">^</span><span>Etihad Cafe</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Fresh coffee, bright plates, happy tables</p>
+        <h1>Good food made easy to love.</h1>
+        <p class="hero-text">A warm neighborhood cafe serving bold coffee, crisp refreshments, hearty snacks, and sweet desserts for every craving.</p>
+        <div class="hero-actions"><a class="button primary" href="#menu">View Menu</a><a class="button ghost" href="#visit">Book a Table</a></div>
+      </div>
+      <div class="hero-stage">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <img class="hero-cup float-3d" src="images/coffee-hero-section.png" alt="Coffee cup with beans splashing">
+        <img class="hero-burger tilt-3d" src="images/burger-frenchfries.png" alt="Burger with french fries">
+      </div>
+    </section>
+    <section class="stats"><article><strong>25+</strong><span>Fresh favorites</span></article><article><strong>08 AM</strong><span>Open daily</span></article><article><strong>4.9</strong><span>Guest rating</span></article></section>
+    <section class="section" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">Our menu</p><h2>Pick your mood</h2></div><p>Simple categories, clear prices, and friendly choices for coffee breaks, quick lunches, and relaxed evenings.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card featured"><img src="images/hot-beverages.png" alt="Hot coffee"><div><span class="pill">Best seller</span><h3>Signature Hot Brews</h3><p>Espresso, latte, mocha, and classic filter coffee brewed fresh.</p><strong>Rs. 499</strong></div></article>
+        <article class="menu-card"><img src="images/cold-beverages.png" alt="Iced coffee drinks"><div><h3>Cold Beverages</h3><p>Iced coffee, shakes, fruit coolers, and creamy chilled blends.</p><strong>Rs. 320</strong></div></article>
+        <article class="menu-card"><img src="images/refreshment.png" alt="Strawberry refreshment"><div><h3>Fresh Refreshers</h3><p>Bright berry spritzes with mint, ice, and fresh fruit sparkle.</p><strong>Rs. 380</strong></div></article>
+        <article class="menu-card"><img src="images/special-combo.png" alt="Burger fries and drink combo"><div><h3>Special Combo</h3><p>Burgers, fries, hot dogs, and a cool drink in one filling plate.</p><strong>Rs. 690</strong></div></article>
+        <article class="menu-card"><img src="images/desserts.png" alt="Strawberry dessert"><div><h3>Sweet Desserts</h3><p>Soft cream, berries, pastries, and spoon-ready treats.</p><strong>Rs. 240</strong></div></article>
+        <article class="menu-card"><img src="images/burger-frenchfries.png" alt="Burger with fries"><div><h3>Crispy Bites</h3><p>Stacked burgers, golden fries, and quick bites for busy days.</p><strong>Rs. 149</strong></div></article>
+      </div>
+    </section>
+    <section class="about" id="about"><div class="about-image"><img src="images/about-image.jpg" alt="Two guests drinking coffee at an outdoor table"></div><div class="about-copy"><p class="eyebrow">About us</p><h2>A cozy stop for coffee, comfort, and conversation.</h2><p>ETIHAD Cafe is built for easy choices and good moments. Drop in for a fast drink, stay for brunch, or bring friends for a colorful table of snacks and desserts.</p><div class="checks"><span>Freshly brewed coffee</span><span>Quick friendly service</span><span>Comfortable seating</span></div></div></section>
+    <section class="section" id="gallery"><div class="section-heading"><div><p class="eyebrow">Gallery</p><h2>From morning plates to evening treats</h2></div></div><div class="gallery-grid"><img src="images/gallery-1.jpg" alt="Steaming coffee cup"><img src="images/gallery-2.jpg" alt="Breakfast eggs"><img src="images/gallery-3.jpg" alt="Fruit smoothies"><img src="images/gallery-4.jpg" alt="Breakfast tray"><img src="images/gallery-5.jpg" alt="Savory crepes"><img src="images/gallery-6.jpg" alt="Coffee and pastry"></div></section>
+    <section class="visit" id="visit"><div><p class="eyebrow">Visit today</p><h2>Ready when you are.</h2><p>Walk in for a quick bite or reserve a sunny corner for your next catch-up.</p></div><form class="booking-form"><label><div class="time-label">Name</div><input type="text" placeholder="Your name" id="name" name="name" required pattern="[A-Za-z]{2,50}" title="Name should contain only letters and spaces (2-50 characters)"></label><label><div class="time-label"  name="guests">Guests</div><select id="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select></label>
+      <label><div class="time-label">Time</div>
+    <div id="time-container">    
+    <select class="time-select" id="time">
+        <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option>
+  
+    </select>
+    
+    <select class="ampm" id="am-pm">
+        <option>AM</option>
+        <option>PM</option>
+    </select>
+    </div>
+</label><button class="button primary" type="submit" onclick="sendMail()">Reserve table!</button>
+</form></section>
+  </main>
+  <footer class="footer"><p>Etihad Cafe</p><span>@Zakia</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
