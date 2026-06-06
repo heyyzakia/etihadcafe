@@ -24,7 +24,7 @@
     <nav class="nav">
       <a class="brand" href="#home"><div class="logo"><img src="images/logo.png"><span>Etihad Cafe</span></div></a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></div>
+      <div class="nav-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#maps">Maps</a></div>
     </nav>
   </header>
   <main>
@@ -44,13 +44,16 @@
     <section class="stats"><article><strong>25+</strong><span>Fresh favorites</span></article><article><strong>08 AM</strong><span>Open daily</span></article><article><strong>4.9</strong><span>Guest rating</span></article></section>
     <section class="section" id="menu">
       <div class="section-heading"><div><p class="eyebrow">Our menu</p><h2>Pick your mood</h2></div><p>Simple categories, clear prices, and friendly choices for coffee breaks, quick lunches, and relaxed evenings.</p></div>
+      <nav class="menu-categories" aria-label="Menu categories"><a href="#appetizers">Appetizers</a><a href="#soups">Soups</a><a href="#drinks">Drinks</a><a href="#combos">Combos</a><a href="#desserts">Desserts</a><a href="#quick-bites">Quick bites</a></nav>
       <div class="menu-grid">
-        <article class="menu-card featured"><img src="images/hot-beverages.png" alt="Hot coffee"><div><span class="pill">Best seller</span><h3>Signature Hot Brews</h3><p>Espresso, latte, mocha, and classic filter coffee brewed fresh.</p><strong>Rs. 499</strong></div></article>
-        <article class="menu-card"><img src="images/cold-beverages.png" alt="Iced coffee drinks"><div><h3>Cold Beverages</h3><p>Iced coffee, shakes, fruit coolers, and creamy chilled blends.</p><strong>Rs. 320</strong></div></article>
-        <article class="menu-card"><img src="images/refreshment.png" alt="Strawberry refreshment"><div><h3>Fresh Refreshers</h3><p>Bright berry spritzes with mint, ice, and fresh fruit sparkle.</p><strong>Rs. 380</strong></div></article>
-        <article class="menu-card"><img src="images/special-combo.png" alt="Burger fries and drink combo"><div><h3>Special Combo</h3><p>Burgers, fries, hot dogs, and a cool drink in one filling plate.</p><strong>Rs. 690</strong></div></article>
-        <article class="menu-card"><img src="images/desserts.png" alt="Strawberry dessert"><div><h3>Sweet Desserts</h3><p>Soft cream, berries, pastries, and spoon-ready treats.</p><strong>Rs. 240</strong></div></article>
-        <article class="menu-card"><img src="images/burger-frenchfries.png" alt="Burger with fries"><div><h3>Crispy Bites</h3><p>Stacked burgers, golden fries, and quick bites for busy days.</p><strong>Rs. 149</strong></div></article>
+        <article class="menu-card featured" id="drinks"><img src="images/hot-beverages.png" alt="Hot coffee"><div><span class="pill">Drinks</span><h3>Signature Hot Brews</h3><p>Espresso, latte, mocha, and classic filter coffee brewed fresh.</p><strong>Rs. 499</strong></div></article>
+        <article class="menu-card"><img src="images/cold-beverages.png" alt="Iced coffee drinks"><div><span class="pill">Drinks</span><h3>Cold Beverages</h3><p>Iced coffee, shakes, fruit coolers, and creamy chilled blends.</p><strong>Rs. 320</strong></div></article>
+        <article class="menu-card"><img src="images/refreshment.png" alt="Strawberry refreshment"><div><span class="pill">Drinks</span><h3>Fresh Refreshers</h3><p>Bright berry spritzes with mint, ice, and fresh fruit sparkle.</p><strong>Rs. 380</strong></div></article>
+        <article class="menu-card" id="combos"><img src="images/special-combo.png" alt="Burger fries and drink combo"><div><span class="pill">Combos</span><h3>Special Combo</h3><p>Burgers, fries, hot dogs, and a cool drink in one filling plate.</p><strong>Rs. 690</strong></div></article>
+        <article class="menu-card" id="desserts"><img src="images/desserts.png" alt="Strawberry dessert"><div><span class="pill">Desserts</span><h3>Sweet Desserts</h3><p>Soft cream, berries, pastries, and spoon-ready treats.</p><strong>Rs. 240</strong></div></article>
+        <article class="menu-card" id="quick-bites"><img src="images/burger-frenchfries.png" alt="Burger with fries"><div><span class="pill">Quick bites</span><h3>Crispy Bites</h3><p>Stacked burgers, golden fries, and quick bites for busy days.</p><strong>Rs. 149</strong></div></article>
+        <article class="menu-card" id="appetizers"><img src="images/burger-frenchfries.png" alt="Cafe appetizers"><div><span class="pill">Appetizers</span><h3>Starter Snacks</h3><p>Fries, nuggets, and light bites for sharing before the main order.</p><strong>Rs. 199</strong></div></article>
+        <article class="menu-card" id="soups"><img src="images/hot-beverages.png" alt="Warm soups"><div><span class="pill">Soups</span><h3>Warm Soups</h3><p>Comforting cafe soups served hot with simple, fresh flavors.</p><strong>Rs. 180</strong></div></article>
       </div>
     </section>
     <section class="about" id="about"><div class="about-image"><img src="images/about-image.jpg" alt="Two guests drinking coffee at an outdoor table"></div><div class="about-copy"><p class="eyebrow">About us</p><h2>A cozy stop for coffee, comfort, and conversation.</h2><p>ETIHAD Cafe is built for easy choices and good moments. Drop in for a fast drink, stay for brunch, or bring friends for a colorful table of snacks and desserts.</p><div class="checks"><span>Freshly brewed coffee</span><span>Quick friendly service</span><span>Comfortable seating</span></div></div></section>
@@ -71,6 +74,7 @@
     </div>
 </label><button class="button primary" type="submit" onclick="sendMail()">Reserve table!</button>
 </form></section>
+    <section class="section maps-section" id="maps"><div class="section-heading"><div><p class="eyebrow">Maps</p><h2>Find Etihad Cafe</h2></div><p>Siddappa Square, 1063 Alak, Vanivilas Road, Chamarajapura, Lakshmipuram, Mysuru 570004.</p></div><div class="map-panel"><iframe title="Etihad Cafe location on Google Maps" src="https://www.google.com/maps?q=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="button primary map-link" href="https://www.google.com/maps/search/?api=1&query=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004" target="_blank" rel="noopener">Open in Google Maps</a></div></section>
   </main>
   <footer class="footer"><p>Etihad Cafe</p><span>@Zakia</span></footer>
   <script src="script.js"></script>
