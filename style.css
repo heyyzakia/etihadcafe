@@ -43,3 +43,10 @@
 .logo h1{
     margin: 0;
 }
+
+/* gallery text alignment */
+/* .balanced-text {
+    text-wrap: balance;
+    max-width: min(300px, 90vw);
+    font-size: 2rem;
+} */
