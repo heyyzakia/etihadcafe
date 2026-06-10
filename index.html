@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Etihad Cafe-zakia</title>
+  <title>xyz Cafe-zakia</title>
   <!-- linking css -->
   <link rel="stylesheet" href="style.css">
 
@@ -22,7 +22,8 @@
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="#home"><div class="logo"><img src="images/logo.png"><span>Etihad Cafe</span></div></a>
+      <!-- LOGO of xyz -->
+      <a class="brand" href="#home"><div class="logo"><img src="images/logo.png"><span>xyz Cafe</span></div></a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <div class="nav-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#maps">Maps</a></div>
     </nav>
@@ -53,10 +54,10 @@
         <article class="menu-card" id="desserts"><img src="images/desserts.png" alt="Strawberry dessert"><div><span class="pill">Desserts</span><h3>Sweet Desserts</h3><p>Soft cream, berries, pastries, and spoon-ready treats.</p><strong>Rs. 240</strong></div></article>
         <article class="menu-card" id="quick-bites"><img src="images/burger-frenchfries.png" alt="Burger with fries"><div><span class="pill">Quick bites</span><h3>Crispy Bites</h3><p>Stacked burgers, golden fries, and quick bites for busy days.</p><strong>Rs. 149</strong></div></article>
         <article class="menu-card" id="appetizers"><img src="images/burger-frenchfries.png" alt="Cafe appetizers"><div><span class="pill">Appetizers</span><h3>Starter Snacks</h3><p>Fries, nuggets, and light bites for sharing before the main order.</p><strong>Rs. 199</strong></div></article>
-        <article class="menu-card" id="soups"><img src="images/hot-beverages.png" alt="Warm soups"><div><span class="pill">Soups</span><h3>Warm Soups</h3><p>Comforting cafe soups served hot with simple, fresh flavors.</p><strong>Rs. 180</strong></div></article>
+        <article class="menu-card" id="soups"><img src="images/hot-beverages.png" alt="Warm soups"><div><span class="pill">Soups</span><h3>Warm Soups</h3><p>coffee is rich, aromatic beverage that energizes the mind!</p><strong>Rs. 180</strong></div></article>
       </div>
     </section>
-    <section class="about" id="about"><div class="about-image"><img src="images/about-image.jpg" alt="Two guests drinking coffee at an outdoor table"></div><div class="about-copy"><p class="eyebrow">About us</p><h2>A cozy stop for coffee, comfort, and conversation.</h2><p>ETIHAD Cafe is built for easy choices and good moments. Drop in for a fast drink, stay for brunch, or bring friends for a colorful table of snacks and desserts.</p><div class="checks"><span>Freshly brewed coffee</span><span>Quick friendly service</span><span>Comfortable seating</span></div></div></section>
+    <section class="about" id="about"><div class="about-image"><img src="images/about-image.jpg" alt="Two guests drinking coffee at an outdoor table"></div><div class="about-copy"><p class="eyebrow">About us</p><h2>A cozy stop for coffee, comfort, and conversation.</h2><p>xyz Cafe is built for easy choices and good moments. Drop in for a fast drink, stay for brunch, or bring friends for a colorful table of snacks and desserts.</p><div class="checks"><span>Freshly brewed coffee</span><span>Quick friendly service</span><span>Comfortable seating</span></div></div></section>
     <section class="section" id="gallery"><div class="section-heading"><div><p class="eyebrow">Gallery</p><h2>From morning plates to evening treats</h2></div></div>
     <div class="gallery-grid"><img src="images/gallery-1.jpg" alt="Steaming coffee cup"><img src="images/gallery-2.jpg" alt="Breakfast eggs"><img src="images/gallery-3.jpg" alt="Fruit smoothies"><img src="images/gallery-4.jpg" alt="Breakfast tray"><img src="images/gallery-5.jpg" alt="Savory crepes"><img src="images/gallery-6.jpg" alt="Coffee and pastry"></div></section>
     <section class="visit" id="visit"><div><p class="eyebrow">Visit today</p><h2>Ready when you are.</h2><p>Walk in for a quick bite or reserve a sunny corner for your next catch-up.</p></div><form class="booking-form"><label><div class="time-label">Name</div><input type="text" placeholder="Your name" id="name" name="name" required pattern="[A-Za-z]{2,50}" title="Name should contain only letters and spaces (2-50 characters)"></label><label><div class="time-label"  name="guests">Guests</div><select id="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select></label>
@@ -74,9 +75,10 @@
     </div>
 </label><button class="button primary" type="submit" onclick="sendMail()">Reserve table!</button>
 </form></section>
-    <section class="section maps-section" id="maps"><div class="section-heading"><div><p class="eyebrow">Maps</p><h2>Find Etihad Cafe</h2></div><p>Siddappa Square, 1063 Alak, Vanivilas Road, Chamarajapura, Lakshmipuram, Mysuru 570004.</p></div><div class="map-panel"><iframe title="Etihad Cafe location on Google Maps" src="https://www.google.com/maps?q=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="button primary map-link" href="https://www.google.com/maps/search/?api=1&query=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004" target="_blank" rel="noopener">Open in Google Maps</a></div></section>
+    <!-- linking google maps to view location -->
+    <section class="section maps-section" id="maps"><div class="section-heading"><div><p class="eyebrow">Maps</p><h2>Find xyz Cafe</h2></div><p>Siddappa Square, 1063 Alak, Vanivilas Road, Chamarajapura, Lakshmipuram, Mysuru 570004.</p></div><div class="map-panel"><!--An iframe embeds another webpage inside your webpage. In this case-Google Maps is displayed inside my website.--><iframe title="xyz Cafe location on Google Maps" src="https://www.google.com/maps?q=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="button primary map-link" href="https://www.google.com/maps/search/?api=1&query=siddappa%20square%2C%201063%20alak%2C%20Vanivilas%20road%2C%20Chamarajapura%2C%20Lakshmipuram%2C%20Mysuru%20570004" target="_blank" rel="noopener">Open in Google Maps</a></div></section>
   </main>
-  <footer class="footer"><p>Etihad Cafe</p><span>@Zakia</span></footer>
+  <footer class="footer"><p>xyz Cafe</p><span>@Zakia</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
